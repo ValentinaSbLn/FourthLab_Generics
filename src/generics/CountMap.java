@@ -19,12 +19,14 @@ public interface CountMap<E> {
     int size();
 
     //Добавить все элементы из source в текущий контейнер, при совпадении ключей,     суммировать значения
-    void addAll(CountMap<E> source);
+    void addAll(CountMap<? extends E> countMap);
 
     //Вернуть java.util.Map. ключ - добавленный элемент, значение - количество его добавлений
     Map<E,Integer> toMap();
 
     //Тот же самый контракт как и toMap(), только всю информацию записать в destination
-    void toMap(Map<E,Integer> destination);
+    void toMap(Map<? super E, Integer> destination);
+
+
 }
 
