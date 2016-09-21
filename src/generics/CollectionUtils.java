@@ -141,46 +141,46 @@ public class CollectionUtils {
         return resultList;
     }
 
-    public static void main(String[] args) {
-        List<String> str1 = Arrays.asList("a","b");//a, b
-
-        List<String> str2 = new ArrayList<>(); //c, d
-        str2.add("c");
-        str2.add("d");
-
-        addAll(str1, str2);
-        System.out.print("addAll(str1, str2):");
-        for (String s:str2)
-            System.out.print(s+" ");
-
-        System.out.print("\nIndexOf \"a\":"+indexOf(str2, "a"));
-
-        List<String>str3=limit(str2, 3); //c,d, a
-        System.out.print("\nlimit(str2, 3):");
-        for (String s:str3)
-            System.out.print(s+" ");
-
-        add(str3,"e");
-        System.out.print("\nadd(str3,\"e\"):");
-        for (String s:str3)
-            System.out.print(s+" ");
-
-        removeAll(str3, str1); // из [c d a e]  удалить [a b]
-        System.out.print("\nremoveAll(str3, str1);");
-        for (String s:str3)
-            System.out.print(s+" ");
-
-        System.out.println("\n"+containsAll(str3, str2)); //str3: c d a, str2: c d a b
-        System.out.println(containsAny(str3, str2));
-
-        List<String> str4=range(str2, "a","c"); //str2: c d a b
-        System.out.print("range(str2, \"a\",\"c\"): ");
-        for (String s:str4)
-            System.out.print(s+" ");
-
-        List<Integer>list=range(Arrays.asList(8,1,3,5,6, 4), -5, 5);
-        System.out.println("\n"+Arrays.toString(list.toArray()));
-
-    }
+//    public static void main(String[] args) {
+//        List<String> str1 = Arrays.asList("a","b");//a, b
+//
+//        List<String> str2 = new ArrayList<>(); //c, d
+//        str2.add("c");
+//        str2.add("d");
+//
+//        addAll(str1, str2);
+//        System.out.print("addAll(str1, str2):");
+//        for (String s:str2)
+//            System.out.print(s+" ");
+//
+//        System.out.print("\nIndexOf \"a\":"+indexOf(str2, "a"));
+//
+//        List<String>str3=limit(str2, 3); //c,d, a
+//        System.out.print("\nlimit(str2, 3):");
+//        for (String s:str3)
+//            System.out.print(s+" ");
+//
+//        add(str3,"e");
+//        System.out.print("\nadd(str3,\"e\"):");
+//        for (String s:str3)
+//            System.out.print(s+" ");
+//
+//        removeAll(str3, str1); // из [c d a e]  удалить [a b]
+//        System.out.print("\nremoveAll(str3, str1);");
+//        for (String s:str3)
+//            System.out.print(s+" ");
+//
+//        System.out.println("\n"+containsAll(str3, str2)); //str3: c d a, str2: c d a b
+//        System.out.println(containsAny(str3, str2));
+//
+//        List<String> str4=range(str2, "a","c"); //str2: c d a b
+//        System.out.print("range(str2, \"a\",\"c\"): ");
+//        for (String s:str4)
+//            System.out.print(s+" ");
+//
+//        List<Integer>list=range(Arrays.asList(8,1,3,5,6, 4), -5, 5);
+//        System.out.println("\n"+Arrays.toString(list.toArray()));
+//
+//    }
 }
 
