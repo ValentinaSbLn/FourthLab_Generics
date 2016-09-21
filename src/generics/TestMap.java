@@ -49,12 +49,5 @@ public class TestMap {
 
                for (Integer s : mapToMap.keySet())
             System.out.println("toMap(mapToMap): ("+s + ": " + mapToMap.get(s)+")");
-
-
     }
-
-
-
-
-
 }
